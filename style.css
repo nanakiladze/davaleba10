@@ -1,0 +1,88 @@
+:root{
+  --Bright : hsl(31, 77%, 52%);
+  --Dark : hsl(184, 100%, 22%);
+  --Very : hsl(179, 100%, 13%);
+
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #f2f2f2;
+  color: #ffffffbf;
+  font-family: "Lexend Deca", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  all:unset;
+  width: 90rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.card {
+  height: 50rem;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.pirveli-barati {
+  background-color: var(--Bright);
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+.pirveli-barati > .card__btn {
+  color:var(--Bright);
+}
+.meore-barati {
+  background-color: var(--Dark);
+}
+.meore-barati > .card__btn {
+  color: var(--Dark);
+}
+.mesame-barati {
+  background-color: var(--Very);
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+.mesame-barati > .card__btn {
+  color: var(--Very);
+}
+.card__img {
+  width: 6rem;
+  height: 4rem;
+}
+.card__title {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+.card__txt {
+  font-size: 1.6rem;
+  line-height: 3rem;
+}
+.card__btn {
+  margin-top: 6rem;
+  border: none;
+  border-radius: 2rem;
+  padding: 1.5rem 1rem;
+  width: 60%;
+  font-size: 1.6rem;
+  background-color: #f2f2f2;
+  transition: 0.3s;
+}
+
+.card__btn:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
